@@ -17,3 +17,7 @@ target("summary")
     set_kind("binary")
     add_deps("test")
     add_files("learn/summary.cpp")
+    add_syslinks("pthread")
+
+-- 包含练习
+includes("exercises")

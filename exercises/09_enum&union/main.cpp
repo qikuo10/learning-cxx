@@ -37,7 +37,7 @@ ColorEnum convert_by_pun(Color c) {
 
     TypePun pun;
     // TODO: 补全类型双关转换
-
+    pun.c=c;    //直接将这个形参赋值给相同类型的元素，因为union元素内存共享，另外其实enum和enum class本质都是int类型，所以只要存储字节数值一直就可以做到转换
     return pun.e;
 }
 
